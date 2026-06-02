@@ -3,16 +3,16 @@
 
 -- You are given two tables: customers and orders.
 
--- customers table:
+-- TODO: customers table:
 -- Column Name 	Type
--- id 	int
--- name 	varchar
+-- id 	        int
+-- name 	    varchar
 
 -- id is the primary key for this table. Each row contains the ID and name of a customer.
 
--- orders table:
+-- TODO: orders table:
 -- Column Name 	Type
--- id 	int
+-- id 	        int
 -- customer_id 	int
 
 -- id is the primary key for this table. customer_id references the id from the customers table. Each row contains the ID of an order and the ID of the customer who placed it.
@@ -35,7 +35,7 @@
 -- 101 	3
 -- 102 	1
 
--- Output:
+-- TODO: Output:
 -- name
 -- Bob
 -- Diana
