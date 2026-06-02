@@ -35,7 +35,7 @@
 --     Each customer has at most one revenue entry per year.
 
 -- Write your query below
-select customer_id 
-from customers
-where revenue > 0 and year = 2020
-group by customer_id;
+SELECT customer_id 
+FROM customers
+WHERE revenue > 0 AND year = 2020
+GROUP BY customer_id;
