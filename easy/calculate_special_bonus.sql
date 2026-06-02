@@ -49,14 +49,14 @@
 
 -- Each employee has a unique ID.
 
-select sub.employee_id, sub.bonus
-from (
-    select *,
-    case 
-        when employee_id % 2 = 1 and name not like 'M%' then salary
-        else 0
-    end as bonus
-    from employees) as sub
-order by sub.employee_id;
+SELECT sub.employee_id, sub.bonus
+FROM (
+    SELECT *,
+    CASE* 
+        WHEN employee_id % 2 = 1 and name NOT LIKE 'M%' THEN salary
+        ELSE 0
+    END AS bonus
+    FROM employees) AS sub
+ORDER BY sub.employee_id;
 
 
