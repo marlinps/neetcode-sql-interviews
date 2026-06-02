@@ -49,4 +49,7 @@
 --     Emma Johnson (person_id = 2) lives in Los Angeles, California.
 --     The address record for person_id = 3 has no matching person, so it does not appear in the output.
 
-
+-- Write your query below
+SELECT a.first_name, a.last_name, b.city, b.state
+FROM person AS a
+LEFT JOIN address AS b ON b.person_id = a.person_id
