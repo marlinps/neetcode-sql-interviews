@@ -47,9 +47,8 @@
 --     Each customer has a unique ID.
 --     Each order references a valid customer.
 
-SELECT name
+SELECT name 
 FROM customers
-WHERE id NOT IN ( 
-    SELECT customer_id
-    FROM orders
-) ORDER BY name;
+WHERE id not in (SELECT customer_id
+FROM orders)
+ORDER BY name
